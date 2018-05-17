@@ -1,0 +1,46 @@
+body {
+  box-sizing: border-box;
+  max-width: 100%;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+h1, h2 {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4em;
+}
+
+nav {
+  text-align: right;
+}
+
+nav a {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  text-decoration: none;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+p {
+  font-family: "Roboto", sans-serif;
+}
+
+#aboutContent {
+  display: flex;
+  justify-content: space-around;
+}
+
+ul {
+  list-style-type: none;
+  text-align: left;
+  align-self: center;
+}
+
+li {
+  font-family: "Roboto", sans-serif;
+}
