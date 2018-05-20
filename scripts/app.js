@@ -62,7 +62,7 @@ $(window).on('scroll', function(){
   } else {
     $('#stickyNavTestimonials').removeClass('scrolledTo');
   };
-  if (distanceScrolled > 1642) {
+  if (distanceScrolled > 1891) {
     $('#stickyNavTestimonials').removeClass('scrolledTo');
     $('#stickyNavContact').addClass('scrolledTo');
   } else {

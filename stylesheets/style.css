@@ -138,8 +138,18 @@ li {
   min-height: 200px;
 }
 
+/* contact form styles */
+
 input::placeholder, textarea::placeholder {
   font-family: "Roboto", sans-serif;
+}
+
+input, textarea, button {
+  margin-top: 2em;
+}
+
+textarea {
+  height: 5em;
 }
 
 button {
@@ -149,9 +159,17 @@ button {
   padding-top: .5em;
   padding-bottom: .5em;
   alignment: center;
+  background-color: #D4CEBE;
+  transition: .3s all ease-in-out;
 }
 
 #myButton:active, #myButton:focus {
+  color: white;
+  background-color: #0D182B;
+}
+
+#myButton:hover {
+  cursor: pointer;
   color: white;
   background-color: #0D182B;
 }
@@ -160,8 +178,30 @@ button {
   border-bottom: 1.5px solid #0D182B;
 }
 
+/* footer styles */
+
 footer {
   font-family: "Roboto", sans-serif;
+  margin-top: 2em;
+  background-color: #0D182B;
+  color: white;
+  text-align: center;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin-right: -2em;
+  margin-left: -2em;
+}
+
+footer a {
+  color: white;
+  display: inline-block;
+  margin-left: 4em;
+  margin-right: 4em;
+  font-size: 1.6em;
+}
+
+footer a:hover {
+  color: #D4CEBE;
 }
 
 textarea {
