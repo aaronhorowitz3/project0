@@ -4969,7 +4969,7 @@ small {
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating) {
-  color: #ffab40;
+  /* color: #ffab40; */
   margin-right: 24px;
   -webkit-transition: color .3s ease;
   transition: color .3s ease;
@@ -6170,7 +6170,7 @@ input[type=search]:not(.browser-default),
 textarea.materialize-textarea {
   background-color: transparent;
   border: none;
-  border-bottom: 1px solid #9e9e9e;
+  border-bottom: 1px solid #0D182B;
   border-radius: 0;
   outline: none;
   height: 3rem;
@@ -6188,7 +6188,7 @@ textarea.materialize-textarea {
   transition: box-shadow .3s, border .3s, -webkit-box-shadow .3s;
 }
 
-input:not([type]):disabled, input:not([type])[readonly="readonly"],
+/* input:not([type]):disabled, input:not([type])[readonly="readonly"],
 input[type=text]:not(.browser-default):disabled,
 input[type=text]:not(.browser-default)[readonly="readonly"],
 input[type=password]:not(.browser-default):disabled,
@@ -6326,7 +6326,7 @@ input[type=number]:not(.browser-default).validate + label,
 input[type=search]:not(.browser-default).validate + label,
 textarea.materialize-textarea.validate + label {
   width: 100%;
-}
+} */
 
 /* Validation Sass Placeholders */
 input.valid:not([type]), input.valid:not([type]):focus,
@@ -6617,9 +6617,9 @@ textarea.materialize-textarea + label:after, .select-wrapper + label:after {
   top: 0.5rem;
 }
 
-.input-field .prefix.active {
+/* .input-field .prefix.active {
   color: #26a69a;
-}
+} */
 
 .input-field .prefix ~ input,
 .input-field .prefix ~ textarea,
@@ -7452,10 +7452,10 @@ input[type=range]::-webkit-slider-thumb {
   margin: -5px 0 0 0;
 }
 
-input[type=range].focused:focus:not(.active)::-webkit-slider-thumb {
+/* input[type=range].focused:focus:not(.active)::-webkit-slider-thumb {
   -webkit-box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26);
           box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26);
-}
+} */
 
 input[type=range] {
   /* fix for FF unable to apply focus style bug  */
@@ -7491,9 +7491,9 @@ input[type=range]:-moz-focusring {
   outline-offset: -1px;
 }
 
-input[type=range].focused:focus:not(.active)::-moz-range-thumb {
+/* input[type=range].focused:focus:not(.active)::-moz-range-thumb {
   box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26);
-}
+} */
 
 input[type=range]::-ms-track {
   height: 3px;
@@ -7524,9 +7524,9 @@ input[type=range]::-ms-thumb {
   transition: box-shadow .3s, -webkit-box-shadow .3s;
 }
 
-input[type=range].focused:focus:not(.active)::-ms-thumb {
+/* input[type=range].focused:focus:not(.active)::-ms-thumb {
   box-shadow: 0 0 0 10px rgba(38, 166, 154, 0.26);
-}
+} */
 
 /***************
     Nav List
@@ -8953,10 +8953,10 @@ input[type=range].focused:focus:not(.active)::-ms-thumb {
   font-size: 15px;
 }
 
-.timepicker-tick.active,
+/* .timepicker-tick.active,
 .timepicker-tick:hover {
   background-color: rgba(38, 166, 154, 0.25);
-}
+} */
 
 .timepicker-dial {
   -webkit-transition: opacity 350ms, -webkit-transform 350ms;

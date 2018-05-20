@@ -1,16 +1,12 @@
-
-/* smooth scrolling */
-@media all and (mid-width: 400px) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
+/*  overall styles */
 
 body {
   box-sizing: border-box;
   max-width: 100%;
   color: rgb(13,24,43)
 }
+
+/* header styles */
 
 header {
   background: #000000 url(../images/mountain-sky.jpg) 100% 100%;
@@ -26,10 +22,25 @@ header {
   justify-content: space-between;
 }
 
-#mainContent {
-  margin-left: 2em;
-  margin-right: 2em;
+h1 {
+  font-size: 4em;
+  color: white;
+  margin-top: 0;
+  padding-top: 110px;
 }
+
+h1, h2 {
+  font-family: "Arvo", serif;
+  font-weight: 700;
+}
+
+#headerH3 {
+  color: white;
+  font-size: 1.5em;
+  font-family: "Arvo", serif;
+}
+
+/* main nav styles */
 
 #stickyNav {
   padding-top: 30px;
@@ -46,41 +57,48 @@ header {
   margin-right: 2em;
   color: white;
   display: inline-block;
-  /* padding: 10px; */
-  border-radius: 15px;
+  transition: all .3s ease-in-out;
 }
 
-.navClick {
-  border-bottom: 1px solid white;
+#stickyNav a:hover {
+  color: #D4CEBE;
+  border-bottom: 1px solid #D4CEBE;
+  margin-bottom: -1px;
 }
 
-h1, h2 {
-  font-family: "Arvo", serif;
-  font-weight: 700;
+.scrolledTo {
+  border-bottom: 1px solid #D4CEBE;
+}
+
+/* side nav styles */
+
+.material-icons {
+  color: #0D182B;
+  display: none;
+}
+
+.sidenav {
+  transition: all .3s ease-in-out;
+}
+
+.sidenav li:hover {
+  background-color: #D4CEBE;
+}
+
+/* site content styles */
+
+#mainContent {
+  margin-left: 2em;
+  margin-right: 2em;
 }
 
 h2 {
   font-size: 3em;
 }
 
-#headerH3 {
-  color: white;
-  font-size: 1.5em;
-  font-family: "Arvo", serif;
-}
-
-
-h1 {
-  font-size: 4em;
-  color: white;
-  margin-top: 0;
-  padding-top: 110px;
-}
-
 h5 {
   color: white;
 }
-
 
 p {
   font-family: "Roboto", sans-serif;
@@ -91,16 +109,17 @@ p {
   justify-content: space-around;
 }
 
-/* ul {
-  list-style-type: none;
-  text-align: left;
-  align-self: center;
-} */
-
 li {
   font-family: "Roboto", sans-serif;
 }
 
+.card-action a {
+  color: #0D182B;
+}
+
+.card-action a:hover {
+  color: #D4CEBE;
+}
 
 .testimonials p {
   display: block;
@@ -119,15 +138,49 @@ li {
   min-height: 200px;
 }
 
-
 input::placeholder, textarea::placeholder {
   font-family: "Roboto", sans-serif;
 }
 
 button {
   font-family: "Arvo", serif;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  alignment: center;
+}
+
+#myButton:active, #myButton:focus {
+  color: white;
+  background-color: #0D182B;
+}
+
+#formEmail:focus, #formFullName:focus {
+  border-bottom: 1.5px solid #0D182B;
 }
 
 footer {
   font-family: "Roboto", sans-serif;
+}
+
+textarea {
+  border-color: #0D182B;
+}
+
+/* media queries */
+
+@media screen and (max-width: 602px) {
+  .material-icons {
+    display: block;
+    margin-top: 30px;
+  }
+
+  #stickyNav {
+    display: none;
+  }
+
+  header {
+    top: calc(-101%);
+  }
 }
