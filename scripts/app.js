@@ -8,24 +8,10 @@ $('#stickyNav a').click(function(){
     return false;
 });
 
-// carousel initialization
-// $(document).ready(function(){
-//    $('.carousel').carousel();
-
-// zoom add-on
- // });
-
-
- // carousel autoplay
-// $('.carousel').carousel();
-//  setInterval(function() {
-//    $('.carousel').carousel('next');
-//  }, 2000);
-//
-
+// carousel initiation
 $(document).ready(function(){
   $('.materialboxed').materialbox();
-    var carousel_interval = 1000;
+    var carousel_interval = 3000;
     $('.carousel').carousel();
     var int;
     function run(){
@@ -34,9 +20,16 @@ $(document).ready(function(){
             $('.carousel').carousel('next');
         }, carousel_interval);
     }
+
+// carousel pause
     function stop(){
     clearInterval(int);
     }
     $('.carousel').hover(stop, run);
     run();
     });
+
+    $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true,
+  });

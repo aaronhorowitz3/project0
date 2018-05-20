@@ -9,6 +9,7 @@
 body {
   box-sizing: border-box;
   max-width: 100%;
+  color: rgb(13,24,43)
 }
 
 header {
@@ -64,7 +65,7 @@ h2 {
 
 #headerH3 {
   color: white;
-  font-size: 2em;
+  font-size: 1.5em;
   font-family: "Arvo", serif;
 }
 
@@ -100,10 +101,24 @@ li {
   font-family: "Roboto", sans-serif;
 }
 
-li img {
-  width: 316px;
-  height: 450px;
+
+.testimonials p {
+  display: block;
 }
+
+.testimonials {
+  background-color: rgba(13,24,43,1);
+  color: white;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-height: 150px;
+  min-height: 200px;
+}
+
 
 input::placeholder, textarea::placeholder {
   font-family: "Roboto", sans-serif;
@@ -115,18 +130,4 @@ button {
 
 footer {
   font-family: "Roboto", sans-serif;
-}
-
-.jsTester {
-  height: 200px;
-  width: 300px;
-  background-color: blue;
-}
-
-.trying {
-  background-color: red;
-}
-
-.jsSwitch {
-  background-color: rgba(0, 0, 255, .5);
 }
