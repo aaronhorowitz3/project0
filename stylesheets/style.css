@@ -25,6 +25,11 @@ header {
   justify-content: space-between;
 }
 
+#mainContent {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
 #stickyNav {
   padding-top: 30px;
   padding-bottom: 30px;
@@ -36,8 +41,8 @@ header {
   font-family: "Arvo", serif;
   font-weight: 400;
   text-decoration: none;
-  margin-left: 1em;
-  margin-right: 1em;
+  margin-left: 2em;
+  margin-right: 2em;
   color: white;
   display: inline-block;
   /* padding: 10px; */
@@ -45,24 +50,34 @@ header {
 }
 
 .navClick {
-  padding-bottom: 5px;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
 }
 
-h1, h2, h3 {
+h1, h2 {
   font-family: "Arvo", serif;
   font-weight: 700;
 }
 
-h3 {
-  font-weight: 400;
+h2 {
+  font-size: 3em;
 }
+
+#headerH3 {
+  color: white;
+  font-size: 2em;
+  font-family: "Arvo", serif;
+}
+
 
 h1 {
   font-size: 4em;
   color: white;
   margin-top: 0;
   padding-top: 110px;
+}
+
+h5 {
+  color: white;
 }
 
 
@@ -75,16 +90,20 @@ p {
   justify-content: space-around;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   text-align: left;
   align-self: center;
-}
+} */
 
 li {
   font-family: "Roboto", sans-serif;
 }
 
+li img {
+  width: 316px;
+  height: 450px;
+}
 
 input::placeholder, textarea::placeholder {
   font-family: "Roboto", sans-serif;
@@ -96,4 +115,18 @@ button {
 
 footer {
   font-family: "Roboto", sans-serif;
+}
+
+.jsTester {
+  height: 200px;
+  width: 300px;
+  background-color: blue;
+}
+
+.trying {
+  background-color: red;
+}
+
+.jsSwitch {
+  background-color: rgba(0, 0, 255, .5);
 }
