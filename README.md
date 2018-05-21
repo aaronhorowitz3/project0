@@ -8,4 +8,13 @@ My biggest struggle with this project was to add pause and zoom functionality to
 
 In order to effectively combine the functionalities to get the result I wanted, I added additional nested divs to my image cards, so that the zoom was not acting on the images themselves. I then added a jQuery variable to moderate the scrolling/pausing functions, which would be triggered by hovering over the carousel.
 
+Here is the jQuery I used:
+
 <img src="images/Carousel-initiation-pause-zoom.png">
+
+
+Another interesting challenge I faced, was to get my nav anchors to highlight when their respective sections are scrolled to. Getting them to highlight/remove highlight when clicked was simple enough. Getting them to highlight on scroll involved adding a variable to track the distance scrolled from the top of the viewport window, and then add/remove classes as needed.
+
+Here is the jQuery I used:
+
+<img src="images/Nav-anchor-styles-scrolled.png">
