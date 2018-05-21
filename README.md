@@ -18,3 +18,7 @@ Another interesting challenge I faced, was to get my nav anchors to highlight wh
 Here is the jQuery I used:
 
 <img src="images/Nav-anchor-styles-scrolled.png">
+
+Over time, I want to continue to modify the site with more personal touches. Creativity is one of my weaker areas, and tends to happen over longer stretches of time.
+
+Additionally, one major challenge I'm still facing involves the two Materialize carousels being tied together - both will scroll/pause/restart in unison, and actions on one have an effect on the other, so I still need to add a class or ID to one of the carousels to prevent this from happening. I also need to play with the dreaded Z-Index, so that the image zoom pops out above the content carousel (and the content carousel does not have any zoom effects). And finally, I need to tweak the sizing of the image descriptions/links, as there's a lot of extra white space there. Hope you enjoy!
