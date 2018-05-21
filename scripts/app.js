@@ -1,6 +1,6 @@
 
 // smooth scroll from navs to different sections
-// top nav:
+// top nav  
 $('#stickyNav a').click(function(){
   $('html, body').animate({
     scrollTop: $( $(this).attr('href') ).offset().top - 85

@@ -6,5 +6,6 @@ In addition to my own HTML, CSS, JavaScript and jQuery, I used the Materialize p
 
 My biggest struggle with this project was to add pause and zoom functionality to Materialize's carousel. Materialize does have native lightbox functionality, but the method they offer does not work smoothly with their Carousel technology. Furthermore, their Carousel does not have a built-in method for pausing its auto-scroll.
 
-In order to effectively combine the functionalities to get the result I wanted, I added additional nested divs to my image cards, so that the zoom was not acting on the images themselves. I then added a jQuery variable to moderate the scrolling/pausing functions, which would be triggered by hovering over the carousel. 
+In order to effectively combine the functionalities to get the result I wanted, I added additional nested divs to my image cards, so that the zoom was not acting on the images themselves. I then added a jQuery variable to moderate the scrolling/pausing functions, which would be triggered by hovering over the carousel.
 
+<img src="images/Carousel-initiation-pause-zoom.png">
