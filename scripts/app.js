@@ -1,6 +1,6 @@
 
 // smooth scroll from navs to different sections
-// top nav  
+// top nav
 $('#stickyNav a').click(function(){
   $('html, body').animate({
     scrollTop: $( $(this).attr('href') ).offset().top - 85
@@ -66,7 +66,7 @@ $(window).on('scroll', function(){
   } else {
     $('#stickyNavTestimonials').removeClass('scrolledTo');
   };
-  if (distanceScrolled > 1891) {
+  if (distanceScrolled > 1863) {
     $('#stickyNavTestimonials').removeClass('scrolledTo');
     $('#stickyNavContact').addClass('scrolledTo');
   } else {
