@@ -18,71 +18,40 @@
 <body>
   <header>
     <div>
+      <nav id="stickyNav" class="stickyNavTop">
+         <a href="#projects" class="wideNav nonFocus" id="stickyNavProjects">&lt;projects&gt;</a>
+         <a href="#testimonials" class="wideNav nonFocus" id="stickyNavTestimonials">&lt;testimonials&gt;</a>
+         <a href="#about" class="wideNav nonFocus" id="stickyNavAbout">&lt;about&gt;</a>
+         <a href="#contact" class="wideNav nonFocus" id="stickyNavContact">&lt;contact&gt;</a>
+         <a href="images/Resume_Working_AaronHorowitz.pdf" target="_blank">&lt;resume&gt;</a>
+      </nav>
       <h1>&lt;aaron&gt;</h1>
-      <h3 id="headerH3">burgeoning web developer &nbsp; &#9702;&nbsp;&#9702; &nbsp; part-time vegetarian &nbsp; &#9702; &nbsp;&#9702;&nbsp; full-time sports obsessor</h3>
+      <h3 id="headerH3">burgeoning web developer &nbsp; &#9702;&nbsp;&#9702; &nbsp; part-time vegetarian &nbsp; &#9702; &nbsp;&#9702;&nbsp; sports obsessor</h3>
     </div>
-    <nav id="stickyNav">
-      <a href="#about" class="wideNav" id="stickyNavAbout">&lt;about&gt;</a>
-      <a href="#projects" class="wideNav" id="stickyNavProjects">&lt;projects&gt;</a>
-      <a href="#testimonials" class="wideNav" id="stickyNavTestimonials">&lt;testimonials&gt;</a>
-      <a href="#contact" class="wideNav" id="stickyNavContact">&lt;contact&gt;</a>
-    </nav>
   </header>
   <ul id="slide-out" class="sidenav">
     <li><a href="#about" class="skinnyNav">&lt;about&gt;</a></li>
     <li><a href="#projects" class="skinnyNav">&lt;projects&gt;</a></li>
     <li><a href="#testimonials" class="skinnyNav">&lt;testimonials&gt;</a></li>
     <li><a href="#contact" class="skinnyNav">&lt;contact&gt;</a></li>
+    <li><a href="images/Resume_Working_AaronHorowitz.pdf" target="_blank">&lt;resume&gt;</a></li>
   </ul>
   <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
   <main id="mainContent">
-    <section id="about">
-      <h2 id="aboutHeader">&lt;about&gt;</h2>
-      <div id="aboutContent">
-        <div id="personalQuestions">
-          <ul>
-            <li><strong>name</strong>:</li>
-            <li><strong>age</strong>:</li>
-            <li><strong>location</strong>:</li>
-            <li><strong>occupation</strong>:</li>
-            <li><strong>undergraduate education</strong>:</li>
-            <li><strong>degree</strong>:</li>
-            <li><strong>major</strong>:</li>
-            <li><strong>minor</strong>:</li>
-            <li><strong>hobbies</strong>:</li>
-            <li><strong>vices</strong>:</li>
-          </ul>
-        </div>
-        <div id="personalAnswers">
-          <ul>
-            <li>Aaron Horowitz</li>
-            <li>30</li>
-            <li>Richmond, CA</li>
-            <li>Student, General Assembly Web Development Immersive</li>
-            <li>University of California, Los Angeles</li>
-            <li>Bachelor of Arts</li>
-            <li>Economics</li>
-            <li>Public Policy</li>
-            <li>Hiking, traveling, live music, playing/watching sports</li>
-            <li>Netflix, good food, a warm bed on a Saturday morning</li>
-          </ul>
-        </div>
-      </div>
-    </section>
     <section id="projects">
       <h2 id="projectsHeader">&lt;projects&gt;</h2>
       <div class="carousel">
         <div class="carousel-item">
           <div class="card materialboxed">
             <div class="card-image">
-              <img src="images/geoquakes-screenshot.png">
+              <img src="images/allways-screenshot.png">
             </div>
             <div class="card-content">
-              <span class="card-title">Geoquakes</span>
-              <p>An interactive map of every earthquake around the world, updated every 15 minutes</p>
+              <span class="card-title">All Ways</span>
+              <p>A web app that combines driving directions with public transit (BART) routes.</p>
             </div>
             <div class="card-action">
-              <a href="https://github.com/aaronhorowitz3/geoquakes" target="_blank">Visit Github to learn more</a>
+              <a href="https://allways.herokuapp.com/" target="_blank">Try All Ways!</a>
             </div>
           </div>
         </div>
@@ -96,21 +65,21 @@
               <p>A story of how the Golden State Warriors built a dynasty in the NBA</p>
             </div>
             <div class="card-action">
-              <a href="https://github.com/aaronhorowitz3/final_project_warriors/tree/master/from_darlings_to_dynasty" target="_blank">Visit Github to learn more</a>
+              <a href="https://github.com/aaronhorowitz3/final_project_warriors/tree/master/from_darlings_to_dynasty" target="_blank">Visit my Github to learn more!</a>
             </div>
           </div>
         </div>
         <div class="carousel-item">
           <div class="card materialboxed">
             <div class="card-image">
-              <img src="images/weather-screenshot.png">
+              <img src="images/stance-screenshot.png">
             </div>
             <div class="card-content">
-              <span class="card-title">Weather Report</span>
-              <p>A simple tool to quickly check the weather in any U.S. city</p>
+              <span class="card-title">STANCE</span>
+              <p>A simple tool to track stock prices and historical chart data</p>
             </div>
             <div class="card-action">
-              <a href="https://github.com/aaronhorowitz3/ajax-weather" target="_blank">Visit Github to learn more</a>
+              <a href="http://pure-cliffs-70526.herokuapp.com/" target="_blank">Check STANCE out!</a>
             </div>
           </div>
         </div>
@@ -138,6 +107,39 @@
       </div>
       <p>*All quotes and attributions are entirely made up; none have actually been said (yet).</p>
     </section>
+    <section id="about">
+      <h2 id="aboutHeader">&lt;about&gt;</h2>
+      <div id="aboutContent">
+         <div id="personalQuestions">
+            <ul>
+               <li><strong>name</strong>:</li>
+               <li><strong>age</strong>:</li>
+               <li><strong>location</strong>:</li>
+               <li><strong>occupation</strong>:</li>
+               <li><strong>undergraduate education</strong>:</li>
+               <li><strong>degree</strong>:</li>
+               <li><strong>major</strong>:</li>
+               <li><strong>minor</strong>:</li>
+               <li><strong>hobbies</strong>:</li>
+               <li><strong>vices</strong>:</li>
+            </ul>
+         </div>
+         <div id="personalAnswers">
+            <ul>
+               <li>Aaron Horowitz</li>
+               <li>30</li>
+               <li>Richmond, CA</li>
+               <li>Student, General Assembly Web Development Immersive</li>
+               <li>University of California, Los Angeles</li>
+               <li>Bachelor of Arts</li>
+               <li>Economics</li>
+               <li>Public Policy</li>
+               <li>Hiking, traveling, live music, playing/watching sports</li>
+               <li>Netflix, good food, a warm bed on a Saturday morning</li>
+            </ul>
+         </div>
+      </div>
+      </section>
     <section id="contact">
       <h2 id="contactHeader">&lt;contact&gt;</h2>
       <p>Leave your contact information if you would like to subscribe to CatFacts!</p>
@@ -149,6 +151,8 @@
       </form>
     </section>
     <footer>
+      <a href="https://www.linkedin.com/in/horowitzaaronj" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://github.com/aaronhorowitz3" target="_blank"><i class="fab fa-github"></i></a>
       <a href="https://www.facebook.com/horowitzaaronj" target="_blank"><i class="fab fa-facebook-f"></i></a>
       <a href="https://twitter.com/real_A_A_ron" target="_blank"><i class="fab fa-twitter"></i></a>
       <a href="https://www.instagram.com/aaronography/" target="_blank"><i class="fab fa-instagram"></i></a>

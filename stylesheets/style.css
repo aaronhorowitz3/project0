@@ -14,7 +14,6 @@ header {
   background-position: center;
   height: 720px;
   text-align: center;
-  position: sticky;
   top: calc(-100% + 80px);
   z-index: 20;
   display: flex;
@@ -25,8 +24,8 @@ header {
 h1 {
   font-size: 4em;
   color: white;
-  margin-top: 0;
-  padding-top: 110px;
+  margin-top: 180px;
+  /* padding-top: 110px; */
 }
 
 h1, h2 {
@@ -43,10 +42,24 @@ h1, h2 {
 /* main nav styles */
 
 #stickyNav {
-  padding-top: 30px;
-  padding-bottom: 30px;
   color: white;
-  background-color: #0D182B;
+  position: fixed;
+  width: 100%;
+  z-index: 22;
+  transition: all .4s ease-in-out;
+  box-sizing: border-box;
+}
+
+.stickyNavScrolled {
+   background-color: #0D182B;
+   padding-top: 20px;
+   padding-bottom: 20px;
+}
+
+.stickyNavTop {
+   padding-top: 40px;
+   padding-bottom: 50px;
+   background-color: transparent;
 }
 
 #stickyNav a {
@@ -63,11 +76,16 @@ h1, h2 {
 #stickyNav a:hover {
   color: #D4CEBE;
   border-bottom: 1px solid #D4CEBE;
-  margin-bottom: -1px;
 }
 
 .scrolledTo {
   border-bottom: 1px solid #D4CEBE;
+  color: #D4CEBE;
+}
+
+.nonFocus {
+     border-bottom: 1px solid transparent;
+     color: white;
 }
 
 /* side nav styles */
@@ -198,6 +216,7 @@ footer a {
   margin-left: 4em;
   margin-right: 4em;
   font-size: 1.6em;
+  transition: all .3s ease-in-out;
 }
 
 footer a:hover {
