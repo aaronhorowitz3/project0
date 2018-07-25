@@ -73,18 +73,9 @@ $(window).on('scroll', function(){
     $('#stickyNavProjects').removeClass('scrolledTo');
     $('#stickyNavProjects').addClass('nonFocus');
   };
-  if (distanceScrolled > 1530) {
+  if (distanceScrolled > 1500) {
     $('#stickyNavProjects').removeClass('scrolledTo');
     $('#stickyNavProjects').addClass('nonFocus');
-    $('#stickyNavTestimonials').addClass('scrolledTo');
-    $('#stickyNavTestimonials').removeClass('nonFocus');
-  } else {
-    $('#stickyNavTestimonials').removeClass('scrolledTo');
-    $('#stickyNavTestimonials').addClass('nonFocus');
-  };
-  if (distanceScrolled > 1872) {
-    $('#stickyNavTestimonials').removeClass('scrolledTo');
-    $('#stickyNavTestimonials').addClass('nonFocus');
     $('#stickyNavContact').addClass('scrolledTo');
     $('#stickyNavContact').removeClass('nonFocus');
   } else {
@@ -94,17 +85,13 @@ $(window).on('scroll', function(){
 })
 
 $('#stickyNavAbout').on('click', function(){
-  $('#stickyNavProjects #stickyNavTestimonials #stickyNavContact').removeClass('scrolledTo');
+  $('#stickyNavProjects #stickyNavContact').removeClass('scrolledTo');
 })
 
 $('#stickyNavProjects').on('click', function(){
-  $('#stickyNavAbout #stickyNavTestimonials #stickyNavContact').removeClass('scrolledTo');
-})
-
-$('#stickyNavTestimonials').on('click', function(){
-  $('#stickyNavProjects #stickyNavAbout #stickyNavContact').removeClass('scrolledTo');
+  $('#stickyNavAbout #stickyNavContact').removeClass('scrolledTo');
 })
 
 $('#stickyNavContact').on('click', function(){
-  $('#stickyNavProjects #stickyNavTestimonials #stickyNavAbout').removeClass('scrolledTo');
+  $('#stickyNavProjects #stickyNavAbout').removeClass('scrolledTo');
 })
