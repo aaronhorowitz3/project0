@@ -49,7 +49,7 @@ $(window).on('scroll', function(){
   console.log(distanceScrolled);
 
 // nav background change
-   if (distanceScrolled > 0) {
+   if (distanceScrolled > 1) {
       $('#stickyNav').addClass('stickyNavScrolled');
       $('#stickyNav').removeClass('stickyNavTop');
    } else {
@@ -58,13 +58,22 @@ $(window).on('scroll', function(){
    };
 // applying bottom border class to each respective nav anchor
   if (distanceScrolled > 638) {
+    $('#stickyNavAbout').addClass('scrolledTo');
+    $('#stickyNavAbout').removeClass('nonFocus');
+  } else {
+    $('#stickyNavAbout').removeClass('scrolledTo');
+    $('#stickyNavAbout').addClass('nonFocus');
+  };
+  if (distanceScrolled > 1050) {
+    $('#stickyNavAbout').removeClass('scrolledTo');
+    $('#stickyNavAbout').addClass('nonFocus');
     $('#stickyNavProjects').addClass('scrolledTo');
     $('#stickyNavProjects').removeClass('nonFocus');
   } else {
     $('#stickyNavProjects').removeClass('scrolledTo');
     $('#stickyNavProjects').addClass('nonFocus');
   };
-  if (distanceScrolled > 1050) {
+  if (distanceScrolled > 1530) {
     $('#stickyNavProjects').removeClass('scrolledTo');
     $('#stickyNavProjects').addClass('nonFocus');
     $('#stickyNavTestimonials').addClass('scrolledTo');
@@ -73,18 +82,9 @@ $(window).on('scroll', function(){
     $('#stickyNavTestimonials').removeClass('scrolledTo');
     $('#stickyNavTestimonials').addClass('nonFocus');
   };
-  if (distanceScrolled > 1530) {
+  if (distanceScrolled > 1872) {
     $('#stickyNavTestimonials').removeClass('scrolledTo');
     $('#stickyNavTestimonials').addClass('nonFocus');
-    $('#stickyNavAbout').addClass('scrolledTo');
-    $('#stickyNavAbout').removeClass('nonFocus');
-  } else {
-    $('#stickyNavAbout').removeClass('scrolledTo');
-    $('#stickyNavAbout').addClass('nonFocus');
-  };
-  if (distanceScrolled > 1872) {
-    $('#stickyNavAbout').removeClass('scrolledTo');
-    $('#stickyNavAbout').addClass('nonFocus');
     $('#stickyNavContact').addClass('scrolledTo');
     $('#stickyNavContact').removeClass('nonFocus');
   } else {
