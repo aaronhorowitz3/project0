@@ -49,7 +49,7 @@ $(window).on('scroll', function(){
   console.log(distanceScrolled);
 
 // nav background change
-   if (distanceScrolled > 1) {
+   if (distanceScrolled > 100) {
       $('#stickyNav').addClass('stickyNavScrolled');
       $('#stickyNav').removeClass('stickyNavTop');
    } else {
@@ -73,7 +73,7 @@ $(window).on('scroll', function(){
     $('#stickyNavProjects').removeClass('scrolledTo');
     $('#stickyNavProjects').addClass('nonFocus');
   };
-  if (distanceScrolled > 1500) {
+  if (distanceScrolled > 2900) {
     $('#stickyNavProjects').removeClass('scrolledTo');
     $('#stickyNavProjects').addClass('nonFocus');
     $('#stickyNavContact').addClass('scrolledTo');
