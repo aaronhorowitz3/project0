@@ -164,10 +164,6 @@ li {
    transition: all .3s ease-in-out;
 }
 
-/* .projectShowcase aside a:hover {
-   color: black;
-} */
-
 .projectHeaders {
    font-family: "Roboto", sans-serif;
    font-weight: bold;
@@ -194,6 +190,10 @@ li {
 
 input::placeholder, textarea::placeholder {
   font-family: "Roboto", sans-serif;
+}
+
+form {
+   margin-right: 100px;
 }
 
 input, textarea, button {
